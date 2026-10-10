@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Online Examination System - Admin</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<!-- ADMIN LOGIN -->
+
+<div class="form-container" id="adminLoginSection">
+
+    <h2>Admin Login</h2>
+
+    <form id="adminLoginForm">
+
+        <label>Username</label>
+        <input type="text" id="adminUsername" required>
+
+        <label>Password</label>
+        <input type="password" id="adminPassword" required>
+
+        <button type="submit">Admin Login</button>
+
+    </form>
+
+    <p>
+        Username: <b>admin</b>
+    </p>
+
+    <p>
+        Password: <b>admin123</b>
+    </p>
+
+</div>
+
+
+<!-- ADMIN DASHBOARD -->
+
+<div class="admin-container" id="adminDashboard" style="display:none;">
+
+    <h1>Admin Dashboard</h1>
+
+    <button onclick="adminLogout()">
+        Logout
+    </button>
+
+    <hr>
+
+    <!-- ADD QUESTION -->
+
+    <h2>Add Question</h2>
+
+    <form id="questionForm">
+
+        <label>Question</label>
+
+        <input type="text" id="questionText" required>
+
+        <label>Option A</label>
+
+        <input type="text" id="optionA" required>
+
+        <label>Option B</label>
+
+        <input type="text" id="optionB" required>
+
+        <label>Option C</label>
+
+        <input type="text" id="optionC" required>
+
+        <label>Option D</label>
+
+        <input type="text" id="optionD" required>
+
+        <label>Correct Answer</label>
+
+        <select id="correctAnswer" required>
+
+            <option value="">Select Answer</option>
+
+            <option value="A">A</option>
+
+            <option value="B">B</option>
+
+            <option value="C">C</option>
+
+            <option value="D">D</option>
+
+        </select>
+
+        <button type="submit">
+            Add Question
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- VIEW QUESTIONS -->
+
+    <h2>View Questions</h2>
+
+    <div id="adminQuestions"></div>
+
+    <hr>
+
+    <!-- VIEW RESULTS -->
+
+    <h2>Student Results</h2>
+
+    <div id="adminResults"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

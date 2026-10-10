@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Online Examination System</h2>
+
+    <nav>
+        <a href="student.html">Dashboard</a>
+        <a href="#" onclick="studentLogout()">Logout</a>
+    </nav>
+</header>
+
+<div class="result-container">
+
+    <h1>Examination Result</h1>
+
+    <h2 id="resultStudent"></h2>
+
+    <div class="result-box">
+
+        <p>
+            Score:
+            <strong id="resultScore"></strong>
+        </p>
+
+        <p>
+            Total Questions:
+            <strong id="resultTotal"></strong>
+        </p>
+
+        <p>
+            Percentage:
+            <strong id="resultPercentage"></strong>%
+        </p>
+
+    </div>
+
+    <button onclick="goDashboard()">
+        Back to Dashboard
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Student Dashboard</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="studentLogout()">Logout</a>
+    </nav>
+</header>
+
+<div class="dashboard">
+
+    <h1 id="welcomeStudent">Welcome Student</h1>
+
+    <p>
+        You can attend the examination and view your result here.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Online Exam</h3>
+
+            <p>
+                Start your examination.
+            </p>
+
+            <button onclick="startExam()">Start Exam</button>
+        </div>
+
+        <div class="card">
+            <h3>My Result</h3>
+
+            <p>
+                View your examination result.
+            </p>
+
+            <button onclick="viewResult()">View Result</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
